@@ -43,7 +43,7 @@ const ChargingSolutions = () => {
       {/* 🔹 Map Section */}
       <div className="mt-10 flex justify-center">
         <Image
-          src="/map.png" // Replace with your real map image
+          src="/Map.png" // Replace with your real map image
           alt="EV Charging Map"
           width={1000}
           height={500}
