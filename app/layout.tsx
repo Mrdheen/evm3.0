@@ -7,9 +7,9 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     <html lang="en">
       <head>
         <title>EVM</title>
-        </head>
+      </head>
       <body>
-        <Navbar />
+          <Navbar />
         {children}
         <Footer />
       </body>

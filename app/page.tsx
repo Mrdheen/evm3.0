@@ -7,22 +7,20 @@ import Testimonials from "./components/Content5";
 import FAQSection from "./components/Content6";
 import BlogSection from "./components/Content7";
 import DownloadApp from "./components/Content8";
+import { Fragment } from "react";
 
 export default function Main() {
   return (
-    <main>
-      <div>
-        <Hero />
-        <WhoWeAre />
-        <ChargingSolutions />
-        <HowItWorks />
-        <HowWeHelp />
-        <Testimonials />
-        <FAQSection />
-        <BlogSection />
-        <DownloadApp />
-      </div>
-      
-    </main>
-);
+    <Fragment>
+      <Hero />
+      <WhoWeAre />
+      <ChargingSolutions />
+      <HowItWorks />
+      <HowWeHelp />
+      <Testimonials />
+      <FAQSection />
+      <BlogSection />
+      <DownloadApp />
+    </Fragment>
+  );
 }

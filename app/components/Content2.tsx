@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const ChargingSolutions = () => {
   return (
-    <section className="max-w-8xl mx-auto px-6 lg:px-20 py-16">
+    <section className="app-width mx-auto py-16">
       
       {/* 🔹 Header & Description Section */}
       <div className="flex flex-col lg:flex-row items-center lg:items-start justify-between gap-8">

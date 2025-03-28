@@ -1,8 +1,12 @@
 @import "tailwindcss";
 
 html {
-    scroll-behavior: smooth;
-  }
+  scroll-behavior: smooth;
+}
 .pig {
   border-radius: 4rem;
+}
+
+.app-width {
+  @apply max-w-[1280px] mx-auto w-full  px-6 lg:px-10;
 }
