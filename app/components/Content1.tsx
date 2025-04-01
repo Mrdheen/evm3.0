@@ -8,7 +8,7 @@ const WhoWeAre = () => {
       <div className="flex gap-10">
         <div className="flex-1">
           <h3 className="text-orange-400 font-bold text-2xl">Who We Are</h3>
-          <h2 className="text-5xl font-bold text-gray-900 mt-5">
+          <h2 className="text-2xl lg:text-5xl font-bold text-gray-900 mt-5">
             We Provide a Variety of Charging Solutions Customized to Fit your
             Unique Business Model.
           </h2>
@@ -39,7 +39,7 @@ const WhoWeAre = () => {
 
         {/* Right Side: Stats and Button */}
         <div className="flex-1 space-y-12">
-          <div className="grid grid-cols-3 gap-12">
+          <div className="grid lg:grid-cols-3 gap-12">
             {[
               {
                 number: "7.5M+",

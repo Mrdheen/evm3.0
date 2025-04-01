@@ -26,7 +26,7 @@ const blogs = [
 
 export default function BlogSection() {
   return (
-    <section className="py-16 bg-[#061627] text-white px-6">
+    <section className="app-width py-16 bg-[#061627] text-white px-6">
       <div className="max-w-8xl mx-15">
         {/* Header */}
         <div className="flex justify-between items-start mb-8">

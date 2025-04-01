@@ -3,7 +3,7 @@ import Image from "next/image";
 const MobileAppBanner = () => {
   return (
     <section
-      className="relative bg-cyan-100 text-gray-900 py-12 mx-15 my-10 pig overflow-hidden"
+      className="app-width relative bg-cyan-100 text-gray-900 py-12 mx-15 my-10 pig overflow-hidden"
     >
       {/* Watermark Background Image */}
       <div className="absolute inset-0 bg-[url(/appdb.png)]"></div>

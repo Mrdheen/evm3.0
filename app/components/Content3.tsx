@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const HowItWorks = () => {
   return (
-    <section id="howitworks" className="bg-[#071E34] text-white py-20 px-6 lg:px-12">
+    <section id="howitworks" className="bg-[#071E34] app-width text-white py-20 px-6 lg:px-12">
       <div className="max-w-7xl mx-10 flex flex-col lg:flex-row gap-70">
         
         {/* Left Side: Vertical Text + Heading */}

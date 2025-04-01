@@ -21,7 +21,7 @@ export default function ContactSection() {
   };
 
   return (
-    <section className="flex flex-col lg:flex-row items-center justify-between bg-white p-20 max-w-8xl mx-auto">
+    <section className="app-width flex flex-col lg:flex-row items-center justify-between bg-white pt-10 max-w-8xl mx-auto">
       {/* Left Image */}
       <div className="w-full lg:w-1/2">
         <Image

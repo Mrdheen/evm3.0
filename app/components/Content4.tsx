@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function HowWeHelp() {
   return (
-    <section id="howwehelp" className="py-16">
+    <section id="howwehelp" className="app-width py-16">
       <div className="max-w-8xl mx-auto px-20">
         {/* Header */}
         <h2 className="text-xl text-orange-400 font-semibold">How We Help</h2>

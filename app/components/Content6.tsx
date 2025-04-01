@@ -26,7 +26,7 @@ export default function FAQSection() {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   return (
-    <section id="faqs" className= "bg-gray-50 py-16 px-8">
+    <section id="faqs" className= "app-width bg-gray-50 py-16 px-8">
       <div className="max-w-8xl pl-15 mx-auto grid grid-cols-1 md:grid-cols-2 gap-30">
         {/* FAQ Section */}
         <div>

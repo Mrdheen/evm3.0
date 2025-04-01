@@ -8,5 +8,31 @@ html {
 }
 
 .app-width {
-  @apply max-w-[1280px] mx-auto w-full  px-6 lg:px-10;
+  max-width: 1280px;
+  margin-inline: auto;
+  width: 100%;
+  padding-inline: calc(var(--spacing) * 6) /* 1.5rem = 24px */;
+  @media (width >= 64rem /* 1024px */) {
+    padding-inline: calc(var(--spacing) * 10) /* 2.5rem = 40px */;
+}
+}
+.menu {
+  @media (width >= 940px) {
+      display: flex;
+  }
+}
+.menu1 {
+  @media (width >= 940px) {
+      display: none;
+  }
+}
+.menu3 {
+  @media (width >= 940px) {
+      display: block;
+  }
+}
+.lground {
+  @media (width >= 940px) {
+      border-radius: var(--radius-3xl) /* 1.5rem = 24px */;
+  }
 }

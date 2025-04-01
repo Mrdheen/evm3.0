@@ -6,7 +6,7 @@ import DownloadApp from "../components/Content8";
 export default function Main() {
   return (
     <main>
-      <div>
+      <div className="app-width ">
         <Hero />
         <BlogHeader />
         <PostCard />
