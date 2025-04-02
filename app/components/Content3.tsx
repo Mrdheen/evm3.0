@@ -8,20 +8,18 @@ const HowItWorks = () => {
         {/* Left Side: Vertical Text + Heading */}
         <div className="relative lg:w-1/4">
           <p className="text-orange-400 font-semibold text-xl ">How It Works</p>
-          {/* <h2 className=" text-[18rem] font-bold opacity-10  -rotate-270">
-            MAXWELL
-          </h2> */}
-          <Image src="/MAXWELL.png"
-           alt="MAXWELL"
-           width={367}
-           height={1873} 
-           className="mt-10 pl-15"
-           />
+          <Image 
+            src="/MAXWELL.png"
+            alt="MAXWELL"
+            width={367}
+            height={1873}
+            className="mt-10 pl-15"
+          />
         </div>
 
         {/* Right Side: Title + Description + Feature Grid */}
         <div className="lg:w-3/4">
-          <h1 className="text-4xl lg:text-5xl font-bold">
+          <h1 className="text-3xl lg:text-5xl font-bold">
             Finding a Charging Station is Easy, Whether in the City or Countryside.
           </h1>
           <p className="mt-4 text-gray-300">
@@ -31,7 +29,7 @@ const HowItWorks = () => {
           </p>
 
           {/* Feature Grid */}
-          <div className="mt-10 grid grid-cols-2 gap-2">
+          <div className="mt-10 grid lg:grid-cols-2 gap-2">
             {[
               {
                 image: <Image src="/temp1.png" alt="TRACKING" width={300} height={200} />,
@@ -76,16 +74,16 @@ const HowItWorks = () => {
 
       {/* 🔹 Charging Your Vehicle Section */}
       <div className="mt-20 text-center">
-      <div className="grid grid-cols-2 items-center">
-        <h2 className="text-5xl font-bold">Charging Your Vehicle</h2>
-        <p className="text-gray-400 max-w-md">
+      <div className="grid lg:grid-cols-2 items-center">
+        <h2 className="text-3xl lg:text-5xl font-bold">Charging Your Vehicle</h2>
+        <p className="mt-10 text-gray-400 max-w-md">
             Follow these three easy steps to effortlessly connect your vehicle to our charging station.
         </p>
     </div>
 
 
         {/* Steps */}
-        <div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="mt-15 grid grid-cols-1 md:grid-cols-3 gap-6">
           {[
             {
               step: "1",

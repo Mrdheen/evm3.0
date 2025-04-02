@@ -5,7 +5,7 @@ const WhoWeAre = () => {
   return (
     <section id="whoweare" className="app-width lg:py-16">
       {/* Title and Description */}
-      <div className="flex gap-10">
+      <div className="flex flex-col lg:flex-row gap-10 lg:items-start lg:text-left">
         <div className="flex-1">
           <h3 className="text-orange-400 font-bold text-2xl">Who We Are</h3>
           <h2 className="text-2xl lg:text-5xl font-bold text-gray-900 mt-5">
@@ -27,7 +27,7 @@ const WhoWeAre = () => {
               "Access to hundreds of thousands of charging locations.",
               "Participate, engage, and stand a chance to win gift cards in our community video contests!",
             ].map((item, index) => (
-              <li key={index} className="flex items-start space-x-3">
+              <li key={index} className="flex items-start space-x-3 lg:justify-start">
                 <span>
                   <Image src="/button.png" alt="✔️" width={32} height={32} />
                 </span>
@@ -39,7 +39,7 @@ const WhoWeAre = () => {
 
         {/* Right Side: Stats and Button */}
         <div className="flex-1 space-y-12">
-          <div className="grid lg:grid-cols-3 gap-12">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
               {
                 number: "7.5M+",
@@ -54,7 +54,7 @@ const WhoWeAre = () => {
                 text: "Sustainable Charging Stations for a Greener Future",
               },
             ].map((stat, index) => (
-              <div key={index}>
+              <div key={index} className="text-center">
                 <h2 className="text-4xl font-bold text-gray-900 dark:text-white">
                   {stat.number}
                 </h2>
@@ -63,15 +63,17 @@ const WhoWeAre = () => {
             ))}
           </div>
 
-          <Link
-            href="#"
-            className="bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-2xl font-medium flex items-center gap-2 w-max"
-          >
-            <span>
-              <Image src="/downcloud.png" alt="🚀" width={24} height={24} />
-            </span>
-            Download Now
-          </Link>
+          <div className="flex justify-center lg:justify-start">
+            <Link
+              href="#"
+              className="bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-2xl font-medium flex items-center gap-2"
+            >
+              <span>
+                <Image src="/downcloud.png" alt="🚀" width={24} height={24} />
+              </span>
+              Download Now
+            </Link>
+          </div>
         </div>
       </div>
 

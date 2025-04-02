@@ -24,19 +24,17 @@ const ChargingSolutions = () => {
           </p>
 
           {/* 🔹 Contact Button */}
-          <Link
-            href="#"
-            className="mt-6 bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-2xl font-medium flex items-center gap-2 w-max"
-          >
-            <span>
-              <Image
-                src="/mail.png"
-                alt="✔️"
-                width={24}
-                height={24}
-              />
-            </span> Contact Us
-          </Link>
+          <div className="flex justify-center lg:justify-start">
+            <Link
+              href="#"
+              className="mt-6 bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-2xl font-medium flex items-center gap-2 w-max mx-auto lg:mx-0"
+            >
+              <span>
+                <Image src="/mail.png" alt="✔️" width={24} height={24} />
+              </span>
+              Contact Us
+            </Link>
+          </div>
         </div>
       </div>
 

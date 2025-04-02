@@ -3,36 +3,37 @@ import Image from "next/image";
 export default function Testimonials() {
   return (
     <section className="app-width py-16 bg-[#0A1B2D] text-white">
-      <div className="max-w-7xl mx-auto ">
+      <div className="max-w-7xl mx-auto px-6">
         {/* Header */}
-        <div className="flex justify-between items-start mb-8">
+        <div className="flex flex-col md:flex-row justify-between items-start mb-8">
           <div>
             <h2 className="text-xl text-orange-400 font-semibold">
               What They Are Saying About Us
             </h2>
-            <h3 className="text-4xl md:text-5xl font-bold leading-tight mt-2">
+            <h3 className="text-3xl md:text-5xl font-bold leading-tight mt-2">
               Discover more and <br /> dive into the details of Maxwell.
             </h3>
           </div>
-          <p className="text-gray-400 max-w-md text-xl">
+          <p className="text-gray-400 max-w-md text-lg md:text-xl mt-4 md:mt-0">
             Here are testimonials from customers who are thrilled with the products
             and services we&apos;ve delivered.
           </p>
-            {/* Navigation Arrows */}
-            <div className="flex justify-end space-x-4 mt-25">
-                <button className="transform hover:scale-110 transition-transform" title="Previous">
-                    <Image src="/leftd.png" alt="✔️" width={50} height={50} />
-                </button>
-                <button className="transform hover:scale-110 transition-transform" title="Next">
-                    <Image src="/rightd.png" alt="✔️" width={50} height={50} />
-                </button>
-            </div>
+        </div>
+
+        {/* Navigation Arrows - Centered on Mobile */}
+        <div className="flex justify-center md:justify-end space-x-4 mt-6 md:mt-0">
+          <button className="transform hover:scale-110 transition-transform" title="Previous">
+            <Image src="/leftd.png" alt="Previous" width={50} height={50} />
+          </button>
+          <button className="transform hover:scale-110 transition-transform" title="Next">
+            <Image src="/rightd.png" alt="Next" width={50} height={50} />
+          </button>
         </div>
 
         {/* Testimonials Container */}
-        <div className="flex space-x-20 overflow-x-auto scrollbar-hide">
+        <div className="flex flex-wrap md:flex-nowrap gap-6 overflow-x-auto scrollbar-hide mt-8">
           {/* Testimonial Card 1 */}
-          <div className="bg-[#0A1B2D] p-6 rounded-3xl border border-gray-600 flex items-center space-x-6 w-[600px]">
+          <div className="bg-[#0A1B2D] p-6 rounded-3xl border border-gray-600 flex flex-col md:flex-row items-center space-x-0 md:space-x-6 w-full md:w-[600px]">
             <Image
               src="/user1.png"
               alt="David Lee"
@@ -40,8 +41,8 @@ export default function Testimonials() {
               height={240}
               className="rounded-3xl"
             />
-            <div>
-              <div className="flex space-x-1 text-yellow-400 text-xl mb-2">
+            <div className="text-center md:text-left mt-4 md:mt-0">
+              <div className="flex justify-center md:justify-start space-x-1 text-yellow-400 text-xl mb-2">
                 {"★★★★★".split("").map((star, index) => (
                   <span key={index}>{star}</span>
                 ))}
@@ -56,7 +57,7 @@ export default function Testimonials() {
           </div>
 
           {/* Testimonial Card 2 */}
-          <div className="bg-[#0A1B2D] p-6 rounded-3xl border border-gray-600 flex items-center space-x-6 w-[600px]">
+          <div className="bg-[#0A1B2D] p-6 rounded-3xl border border-gray-600 flex flex-col md:flex-row items-center space-x-0 md:space-x-6 w-full md:w-[600px]">
             <Image
               src="/user2.png"
               alt="Emily Johnson"
@@ -64,8 +65,8 @@ export default function Testimonials() {
               height={240}
               className="rounded-3xl"
             />
-            <div>
-              <div className="flex space-x-1 text-yellow-400 text-xl mb-2">
+            <div className="text-center md:text-left mt-4 md:mt-0">
+              <div className="flex justify-center md:justify-start space-x-1 text-yellow-400 text-xl mb-2">
                 {"★★★★★".split("").map((star, index) => (
                   <span key={index}>{star}</span>
                 ))}

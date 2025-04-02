@@ -15,7 +15,7 @@ const Hero = () => {
               <p className="text-orange-400 text-base font-semibold">
                 For Everyone, Every Business, and Every Electric Vehicle
               </p>
-              <h1 className="text-6xl font-bold mt-2 leading-tight">
+              <h1 className="text-3xl lg:text-6xl font-bold mt-2 leading-tight">
                 Solutions for EV Charging Stations
               </h1>
               <p className="text-gray-300 mt-4">
