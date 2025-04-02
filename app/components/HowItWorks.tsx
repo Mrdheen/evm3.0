@@ -13,12 +13,12 @@ const HowItWorks = () => {
             alt="MAXWELL"
             width={367}
             height={1873}
-            className="mt-10 pl-15"
+            className="mt-10 pl-15 hideimage"
           />
         </div>
 
         {/* Right Side: Title + Description + Feature Grid */}
-        <div className="lg:w-3/4">
+        <div className="mt-[-250px] lg:w-3/4 lg:mt-0">
           <h1 className="text-3xl lg:text-5xl font-bold">
             Finding a Charging Station is Easy, Whether in the City or Countryside.
           </h1>

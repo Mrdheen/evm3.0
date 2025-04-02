@@ -1,12 +1,12 @@
 import Hero from "./components/Hero";
-import WhoWeAre from "./components/Content1";
-import ChargingSolutions from "./components/Content2";
-import HowItWorks from "./components/Content3";
-import HowWeHelp from "./components/Content4";
-import Testimonials from "./components/Content5";
-import FAQSection from "./components/Content6";
-import BlogSection from "./components/Content7";
-import DownloadApp from "./components/Content8";
+import WhoWeAre from "./components/WhoWeAre";
+import ChargingSolutions from "./components/ChargingSolutions";
+import HowItWorks from "./components/HowItWorks";
+import HowWeHelp from "./components/HowWeHelp";
+import Testimonials from "./components/Testimonials";
+import FAQSection from "./components/FaqSection";
+import BlogSection from "./components/BlogSection";
+import DownloadApp from "./components/MobileAppBanner";
 import { Fragment } from "react";
 
 export default function Main() {

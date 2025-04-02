@@ -36,3 +36,8 @@ html {
       border-radius: var(--radius-3xl) /* 1.5rem = 24px */;
   }
 }
+.hideimage {
+  @media (width <= 1023px) {
+      display: none;
+  }
+}
