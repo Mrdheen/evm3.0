@@ -26,26 +26,26 @@ export default function FAQSection() {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   return (
-    <section id="faqs" className= "app-width bg-gray-50 py-16 px-8">
-      <div className="max-w-8xl pl-15 mx-auto grid grid-cols-1 md:grid-cols-2 gap-30">
+    <section id="faqs" className="app-width bg-gray-50 py-16 px-6 md:px-8">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-30 items-center">
         {/* FAQ Section */}
         <div>
-          <h3 className="text-orange-400 text-2xl font-semibold">FAQs</h3>
-          <h2 className="text-6xl font-bold mt-4">
+          <h3 className="text-orange-400 text-xl md:text-2xl font-semibold">FAQs</h3>
+          <h2 className="text-3xl lg:text-6xl font-bold mt-4">
             More Than 1500 Charging Stations & Growing Big
           </h2>
           <div className="mt-8">
             {faqs.map((faq, index) => (
-              <div key={index} className="border-b text-gray-800 border-gray-700 py-4">
+              <div key={index} className="border-b text-gray-800 border-gray-400 py-4">
                 <button
-                  className="flex justify-between w-full text-left text-3xl font-medium"
+                  className="flex justify-between w-full text-left text-lg md:text-3xl font-medium"
                   onClick={() => setOpenIndex(openIndex === index ? null : index)}
                 >
                   {faq.question}
-                  <span>{openIndex === index ? "−" : "+"}</span>
+                  <span className="text-2xl md:text-3xl">{openIndex === index ? "−" : "+"}</span>
                 </button>
                 {openIndex === index && (
-                  <p className="text-gray-600 text-xl mt-2">{faq.answer}</p>
+                  <p className="text-gray-600 text-base md:text-xl mt-2">{faq.answer}</p>
                 )}
               </div>
             ))}
@@ -53,13 +53,13 @@ export default function FAQSection() {
         </div>
 
         {/* Image Section */}
-        <div className="flex justify-center items-center">
+        <div className="flex justify-center items-center mt-8 md:mt-0">
           <Image
-            src="/qas.png" // Replace with the actual image
+            src="/qas.png"
             alt="EV Charging"
             width={560}
             height={1128}
-            className="rounded-3xl"
+            className="rounded-3xl w-full max-w-xs md:max-w-none"
           />
         </div>
       </div>

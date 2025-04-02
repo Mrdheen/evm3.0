@@ -7,13 +7,13 @@ const blogs = [
   {
     title: "Which EV charging station is best for my business?",
     description:
-      "Installing electric vehicle charging stations is becoming a strategic necessity for businesses. According to the report “Technology and Innovation Pathways for Zero Carbon Buildings”",
+      "Installing electric vehicle charging stations is becoming a strategic necessity for businesses. According to the report 'Technology and Innovation Pathways for Zero Carbon Buildings'.",
     image: "/frame1.png",
   },
   {
     title: "100 reasons to drive an electric vehicle",
     description:
-      "In Latin America, we are joining Blink Charging’s global celebration campaign: “100 Reasons to Drive an Electric Vehicle”, an initiative that highlights the countless advantages of making the transition to electric mobility.",
+      "In Latin America, we are joining Blink Charging’s global celebration campaign: '100 Reasons to Drive an Electric Vehicle', an initiative that highlights the countless advantages of making the transition to electric mobility.",
     image: "/frame2.png",
   },
   {
@@ -27,51 +27,40 @@ const blogs = [
 export default function BlogSection() {
   return (
     <section className="app-width py-16 bg-[#061627] text-white px-6">
-      <div className="max-w-8xl mx-15">
+      <div className="max-w-7xl mx-auto">
         {/* Header */}
-        <div className="flex justify-between items-start mb-8">
+        <div className="flex flex-col md:flex-row justify-between items-start mb-8">
           <div>
-            <h2 className="text-2xl text-orange-400 font-semibold">Our Blogs</h2>
-            <h3 className="text-4xl md:text-6xl font-bold leading-tight mt-2">
+            <h2 className="text-xl md:text-2xl text-orange-400 font-semibold">Our Blogs</h2>
+            <h3 className="text-3xl lg:text-5xl font-bold leading-tight mt-2">
               Stay Informed on the Cutting-Edge of Technology
             </h3>
           </div>
 
           {/* Navigation Arrows */}
-          <div className="flex space-x-4">
-            <button
-              className="p-5 bg-gray-700 hover:bg-gray-600 rounded-full"
-              title="Previous"
-            >
-              <FaArrowLeft className="text-white text-xl" />
+          <div className="flex space-x-4 mt-6 md:mt-0">
+            <button className="p-4 bg-gray-700 hover:bg-gray-600 rounded-full" title="Previous">
+              <FaArrowLeft className="text-white text-lg md:text-xl" />
             </button>
-            <button
-              className="p-5 bg-gray-700 hover:bg-gray-600 rounded-full"
-              title="Next"
-            >
-              <FaArrowRight className="text-white text-xl" />
+            <button className="p-4 bg-gray-700 hover:bg-gray-600 rounded-full" title="Next">
+              <FaArrowRight className="text-white text-lg md:text-xl" />
             </button>
           </div>
         </div>
 
         {/* Blog Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
           {blogs.map((blog, index) => (
-            <div
-              key={index}
-              className="bg-[#061627] rounded-xl overflow-hidden p-4"
-            >
-              <div className="relative w-full h-100">
-                <Image
-                  src={blog.image}
-                  alt={blog.title}
-                  layout="fill"
-                  objectFit="cover"
-                  className="rounded-3xl"
-                />
-              </div>
-              <h3 className="text-3xl font-semibold mt-12">{blog.title}</h3>
-              <p className="text-gray-300 text-xl mt-6">{blog.description}</p>
+            <div key={index} className="bg-[#061627] rounded-xl overflow-hidden p-4">
+              <Image
+                src={blog.image}
+                alt={blog.title}
+                width={500}
+                height={300}
+                className="rounded-3xl w-full h-auto"
+              />
+              <h3 className="text-2xl md:text-3xl font-semibold mt-6">{blog.title}</h3>
+              <p className="text-gray-300 text-lg md:text-xl mt-4">{blog.description}</p>
             </div>
           ))}
         </div>
