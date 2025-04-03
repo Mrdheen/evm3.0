@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function PostCard() {
     return (
-      <div className="w-full flex flex-col">
+      <div className="app-width w-full flex flex-col mt-[-100px] lg:mt-0">
         <div className="mb-8">
           <Image
             src="/postcad.png"

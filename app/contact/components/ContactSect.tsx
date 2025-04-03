@@ -35,7 +35,7 @@ export default function ContactSection() {
 
       {/* Right Form */}
       <div className="w-full lg:w-1/2 p-6">
-        <h2 className="text-5xl font-bold text-gray-900">We are here to help you</h2>
+        <h2 className="text-xl lg:text-4xl font-bold text-gray-900">We are here to help you</h2>
         <p className="text-gray-600 mt-10 text-xl">
           If you have any questions about our products, need help solving a problem or need assistance, our specialized team is here to help you with whatever you need.{" "}
           <a href="mailto:hello@maxwell.com" className="text-blue-600 font-semibold">

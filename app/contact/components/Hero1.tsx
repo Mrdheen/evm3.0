@@ -5,8 +5,8 @@ const Hero = () => {
       {/* Background Overlay */}
       <div className="absolute inset-0 bg-black/50"></div>
       < div className = "app-width relative text-center mt-45 text-gray-100" >
-        <h1 className="text-8xl font-bold">Contact Maxwell Charging</h1>
-        <p className="text-2xl mt-5">Our team is ready to help you.</p>
+        <h1 className="text-3xl lg:text-8xl font-bold">Contact Maxwell Charging</h1>
+        <p className="text-lg lg:text-2xl mt-5">Our team is ready to help you.</p>
       </div>
     </div>
   );

@@ -1,12 +1,12 @@
 import Hero from "./components/Hero2";
-import BlogHeader from "./components/Content21";
-import PostCard from "./components/Content22";
+import BlogHeader from "./components/BlogHeader";
+import PostCard from "./components/PostCard";
 import DownloadApp from "../components/MobileAppBanner";
 
 export default function Main() {
   return (
     <main>
-      <div className="app-width ">
+      <div>
         <Hero />
         <BlogHeader />
         <PostCard />
