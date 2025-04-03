@@ -3,10 +3,10 @@ import Link from "next/link";
 
 const ChargingSolutions = () => {
   return (
-    <section className="app-width mx-auto py-16">
+    <section className="mx-auto py-16">
       
       {/* 🔹 Header & Description Section */}
-      <div className="flex flex-col lg:flex-row items-center lg:items-start justify-between gap-8">
+      <div className="app-width flex flex-col lg:flex-row items-center lg:items-start justify-between gap-8">
         
         {/* Left - Header Text */}
         <div className="lg:w-1/2">

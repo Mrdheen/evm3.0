@@ -2,11 +2,11 @@ import Image from "next/image";
 
 const MobileAppBanner = () => {
   return (
-    <section className="app-width relative bg-cyan-100 text-gray-900 pig mx-auto py-10 my-10 overflow-hidden">
+    <section className="relative bg-cyan-100 text-gray-900 pig mx-auto py-10 my-10 overflow-hidden">
       {/* Watermark Background Image */}
       <div className="absolute inset-0 bg-[url(/appdb.png)] bg-cover bg-center opacity-20"></div>
 
-      <div className="relative max-w-7xl mx-auto flex flex-col-reverse md:flex-row items-center justify-between gap-8 px-6">
+      <div className="app-width relative max-w-7xl mx-auto flex flex-col-reverse md:flex-row items-center justify-between gap-8 px-6">
         {/* Left Text Content */}
         <div className="md:w-1/2 text-center md:text-left">
           <p className="text-orange-600 font-semibold text-lg md:text-xl">Our Mobile App</p>

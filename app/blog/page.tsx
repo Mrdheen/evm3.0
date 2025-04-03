@@ -1,6 +1,6 @@
 import Hero from "./components/Hero2";
 import BlogHeader from "./components/BlogHeader";
-import PostCard from "./components/PostCard";
+import BlogGrid from "./components/BlogGrid";
 import DownloadApp from "../components/MobileAppBanner";
 
 export default function Main() {
@@ -9,7 +9,7 @@ export default function Main() {
       <div>
         <Hero />
         <BlogHeader />
-        <PostCard />
+        <BlogGrid />
         <DownloadApp />
       </div>  
     </main>

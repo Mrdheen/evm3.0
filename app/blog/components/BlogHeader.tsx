@@ -2,8 +2,8 @@ import Image from "next/image";
 
 export default function BlogHeader() {
   return (
-    <section className="app-width relative pb-20">
-      <div className="max-w-3xl mx-auto text-center py-16">
+    <section className="relative pb-20">
+      <div className="app-width max-w-3xl mx-auto text-center py-16">
         {/* Tag */}
         <span className="bg-orange-100 text-orange-600 px-4 py-1 mt-[-24px] lg:mt-0 rounded-full text-sm font-medium">
           Our blog
@@ -18,7 +18,7 @@ export default function BlogHeader() {
         </p>
 
         {/* Search Bar */}
-        <div className="mt-6 flex justify-center px-4">
+        <div className="mt-10 flex justify-center px-4">
           <div className="relative w-full sm:max-w-md">
             <span className="absolute left-3 sm:left-4 top-1/2 transform -translate-y-1/2 text-gray-400">
               <Image src="/search.png" alt="Search Icon" width={20} height={20} />

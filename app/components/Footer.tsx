@@ -8,7 +8,7 @@ import Link from "next/link";
 export default function Footer() {
   return (
     <footer className="bg-[#0B121D] text-white py-12 px-6">
-      <div className="max-w-7xl mx-auto">
+      <div className="app-width max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 items-start text-center md:text-left">
           {/* Logo & Social Icons */}
           <div className="flex flex-col items-center md:items-start">
