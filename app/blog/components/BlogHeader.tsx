@@ -5,7 +5,7 @@ export default function BlogHeader() {
     <section className="relative pb-20">
       <div className="app-width max-w-3xl mx-auto text-center py-16">
         {/* Tag */}
-        <span className="bg-orange-100 text-orange-600 px-4 py-1 mt-[-24px] lg:mt-0 rounded-full text-sm font-medium">
+        <span className="bg-orange-100 text-orange-600 px-4 py-1 mt-[-24px] lg:mt-0 rounded-full font-medium">
           Our blog
         </span>
 
