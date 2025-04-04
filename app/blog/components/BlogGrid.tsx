@@ -133,7 +133,7 @@ export default function BlogGrid() {
 
         {/* Load More Button */}
         <div className="mt-10 flex justify-center">
-          <button className="px-6 py-3 bg-blue-200 text-blue-700 rounded-2xl shadow-md hover:bg-blue-700 transition">
+          <button className="px-6 py-3 bg-blue-200 text-blue-700 rounded-2xl shadow-md hover:bg-blue-300 transition">
             Load More
           </button>
         </div>

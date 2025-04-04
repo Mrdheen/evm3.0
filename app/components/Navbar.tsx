@@ -48,7 +48,7 @@ const Navbar = () => {
 
         {/* Mobile Menu */}
         {isOpen && (
-          <div className="absolute top-full left-0 w-full rounded-b-3xl backdrop-blur-lg bg-gray-600/80 shadow-lg text-white flex flex-col items-center space-y-4 py-6 menu1">
+          <div className="absolute top-full left-0 w-full rounded-b-3xl bg-gray-600 shadow-lg text-white flex flex-col items-center space-y-4 py-6 menu1">
             <Link href="/" onClick={() => setIsOpen(false)}>
               <span className="bg-blue-900 py-2 px-4 rounded-xl">Home</span>
             </Link>
@@ -74,7 +74,7 @@ const Navbar = () => {
 
         {/* Contact Button (Always Visible) */}
         <Link href="/contact" className="hidden menu3">
-          <span className="bg-blue-500 px-5 py-2 rounded-2xl text-white hover:bg-blue-700">
+          <span className="bg-blue-500 px-5 py-2 rounded-2xl text-base text-white hover:bg-blue-700">
             Contact Us
           </span>
         </Link>

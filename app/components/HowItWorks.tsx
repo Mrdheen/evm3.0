@@ -7,19 +7,19 @@ const HowItWorks = () => {
         
         {/* Left Side: Vertical Text + Heading */}
         <div className="relative lg:w-1/4">
-          <p className="text-orange-400 font-semibold text-xl ">How It Works</p>
+          <p className="text-orange-400 font-semibold ">How It Works</p>
           <Image 
             src="/MAXWELL.png"
             alt="MAXWELL"
             width={367}
-            height={1873}
+            height={1859}
             className="mt-10 pl-15 hideimage"
           />
         </div>
 
         {/* Right Side: Title + Description + Feature Grid */}
         <div className="mt-[-250px] lg:w-3/4 lg:mt-0">
-          <h1 className="text-3xl lg:text-5xl font-bold">
+          <h1 className="text-5xl lg:text-5xl font-bold">
             Finding a Charging Station is Easy, Whether in the City or Countryside.
           </h1>
           <p className="mt-4 text-gray-300">
@@ -64,8 +64,8 @@ const HowItWorks = () => {
             ].map((feature, index) => (
               <div key={index} className="bg-[#071E34] p-6 rounded-lg">
                 {feature.image}
-                <p className="text-xs text-gray-400 mt-4 uppercase">{feature.label}</p>
-                <h3 className="text-lg font-semibold mt-2">{feature.title}</h3>
+                <p className="text-gray-400 mt-4 uppercase">{feature.label}</p>
+                <h3 className="text-2xl lg:text-4xl font-semibold mt-2">{feature.title}</h3>
               </div>
             ))}
           </div>

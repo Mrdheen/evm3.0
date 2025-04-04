@@ -30,22 +30,22 @@ export default function FAQSection() {
       <div className="app-width max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-30 items-center">
         {/* FAQ Section */}
         <div>
-          <h3 className="text-orange-400 text-xl md:text-2xl font-semibold">FAQs</h3>
-          <h2 className="text-3xl lg:text-6xl font-bold mt-4">
+          <h3 className="text-orange-400 font-semibold">FAQs</h3>
+          <h2 className="text-3xl lg:text-5xl font-bold mt-4">
             More Than 1500 Charging Stations & Growing Big
           </h2>
           <div className="mt-8">
             {faqs.map((faq, index) => (
               <div key={index} className="border-b text-gray-800 border-gray-400 py-4">
                 <button
-                  className="flex justify-between w-full text-left text-lg md:text-3xl font-medium"
+                  className="flex justify-between w-full text-left text-2xl font-medium"
                   onClick={() => setOpenIndex(openIndex === index ? null : index)}
                 >
                   {faq.question}
-                  <span className="text-2xl md:text-3xl">{openIndex === index ? "−" : "+"}</span>
+                  <span>{openIndex === index ? "−" : "+"}</span>
                 </button>
                 {openIndex === index && (
-                  <p className="text-gray-600 text-base md:text-xl mt-2">{faq.answer}</p>
+                  <p className="text-gray-600 text-base mt-2">{faq.answer}</p>
                 )}
               </div>
             ))}

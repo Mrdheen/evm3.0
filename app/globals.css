@@ -41,3 +41,12 @@ html {
       display: none;
   }
 }
+
+.menu-blur {
+  background: rgba(75, 85, 99, 0.6); /* Fallback for older browsers */
+  -webkit-backdrop-filter: blur(20px); /* Safari */
+  -moz-backdrop-filter: blur(20px); /* Firefox (experimental) */
+  -o-backdrop-filter: blur(20px); /* Opera (rarely needed) */
+  -ms-backdrop-filter: blur(20px); /* Edge Legacy (won't work but prevents errors) */
+  backdrop-filter: blur(20px);
+}

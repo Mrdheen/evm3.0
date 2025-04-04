@@ -10,7 +10,7 @@ const ChargingSolutions = () => {
         
         {/* Left - Header Text */}
         <div className="lg:w-1/2">
-          <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white">
+          <h1 className="text-3xl lg:text-5xl font-bold text-gray-900 ">
             Electric Vehicle Charging Options Tailored for Every Business and Driver
           </h1>
         </div>
@@ -39,7 +39,7 @@ const ChargingSolutions = () => {
       </div>
 
       {/* 🔹 Map Section */}
-      <div className="mt-10 flex justify-center">
+      <div className="mt-10 mx-6 flex justify-center">
         <Image
           src="/Map.png" // Replace with your real map image
           alt="EV Charging Map"
@@ -50,7 +50,7 @@ const ChargingSolutions = () => {
       </div>
 
       {/* 🔹 Features Section */}
-      <div className="mt-6 grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div className="mx-6 mt-6 grid grid-cols-1 md:grid-cols-3 gap-6">
         {[
           {
             icon: <Image src="/charge1.png" alt="✔️" width={48} height={48}/>,
@@ -74,13 +74,13 @@ const ChargingSolutions = () => {
           <div key={index} className="bg-gray-100 rounded-2xl p-6">
             {item.icon}
             <div className="flex items-center space-x-3">
-              <h3 className="text-lg font-semibold text-gray-900">{item.title}</h3>
+              <h3 className="text-2xl font-semibold text-gray-900">{item.title}</h3>
             </div>
             <p className="mt-2 text-gray-600">{item.description}</p>
           </div>
         ))}
       </div>
-      <div className="mt-10 pt-40 flex justify-center">
+      <div className="mx-6 mt-10 pt-40 flex justify-center">
         <Image
           src="/sponsors.png" // Replace with your real map image
           alt="Sponsors"

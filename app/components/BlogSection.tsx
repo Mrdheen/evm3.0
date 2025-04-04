@@ -31,7 +31,7 @@ export default function BlogSection() {
         {/* Header */}
         <div className="flex flex-col md:flex-row justify-between items-start mb-8">
           <div>
-            <h2 className="text-xl md:text-2xl text-orange-400 font-semibold">Our Blogs</h2>
+            <h2 className="text-orange-400 font-semibold">Our Blogs</h2>
             <h3 className="text-3xl lg:text-5xl font-bold leading-tight mt-2">
               Stay Informed on the Cutting-Edge of Technology
             </h3>
@@ -59,8 +59,8 @@ export default function BlogSection() {
                 height={300}
                 className="rounded-3xl w-full h-auto"
               />
-              <h3 className="text-2xl md:text-3xl font-semibold mt-6">{blog.title}</h3>
-              <p className="text-gray-300 text-lg md:text-xl mt-4">{blog.description}</p>
+              <h3 className="text-2xl font-semibold mt-6">{blog.title}</h3>
+              <p className="text-gray-300 mt-4">{blog.description}</p>
             </div>
           ))}
         </div>

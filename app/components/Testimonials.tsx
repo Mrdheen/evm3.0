@@ -7,14 +7,14 @@ export default function Testimonials() {
         {/* Header */}
         <div className="flex flex-col md:flex-row justify-between items-start mb-8">
           <div>
-            <h2 className="text-xl text-orange-400 font-semibold">
+            <h2 className="text-orange-400 font-semibold">
               What They Are Saying About Us
             </h2>
-            <h3 className="text-3xl md:text-5xl font-bold leading-tight mt-2">
+            <h3 className="text-3xl md:text-5xl font-bold mt-4">
               Discover more and <br /> dive into the details of Maxwell.
             </h3>
           </div>
-          <p className="text-gray-400 max-w-md text-lg md:text-xl mt-4 md:mt-0">
+          <p className="text-gray-400 max-w-md mt-4 md:mt-0">
             Here are testimonials from customers who are thrilled with the products
             and services we&apos;ve delivered.
           </p>
@@ -42,17 +42,17 @@ export default function Testimonials() {
               className="rounded-3xl"
             />
             <div className="text-center md:text-left mt-4 md:mt-0">
-              <div className="flex justify-center md:justify-start space-x-1 text-yellow-400 text-xl mb-2">
+              <div className="flex justify-center md:justify-start space-x-1 text-orange-400 text-xl mb-2">
                 {"★★★★★".split("").map((star, index) => (
                   <span key={index}>{star}</span>
                 ))}
               </div>
-              <p className="text-gray-300 text-lg">
+              <p className="text-gray-300">
                 As a new EV owner, I was overwhelmed by charging. Thankfully, Maxwell
                 makes it effortless! The live map shows nearby stations, and the
                 reservation option ensures I never find a full station.
               </p>
-              <p className="font-bold mt-4">David Lee</p>
+              <p className="font-bold text-lg mt-4">David Lee</p>
             </div>
           </div>
 
@@ -66,16 +66,16 @@ export default function Testimonials() {
               className="rounded-3xl"
             />
             <div className="text-center md:text-left mt-4 md:mt-0">
-              <div className="flex justify-center md:justify-start space-x-1 text-yellow-400 text-xl mb-2">
+              <div className="flex justify-center md:justify-start space-x-1 text-orange-400 text-xl mb-2">
                 {"★★★★★".split("").map((star, index) => (
                   <span key={index}>{star}</span>
                 ))}
               </div>
-              <p className="text-gray-300 text-lg">
+              <p className="text-gray-300">
                 Maxwell has changed how we manage our vehicle fleet. The app helps find
                 chargers, monitor times, and plan routes. Our team loves the UI, reducing downtime.
               </p>
-              <p className="font-bold mt-4">Emily Johnson</p>
+              <p className="font-boldtext-lg mt-4">Emily Johnson</p>
             </div>
           </div>
         </div>

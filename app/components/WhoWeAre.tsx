@@ -3,11 +3,11 @@ import Link from "next/link";
 
 const WhoWeAre = () => {
   return (
-    <section id="whoweare" className="mt-10 lg:py-16">
+    <section id="whoweare" className="mt-10 lg:mt-0 lg:py-16">
       {/* Title and Description */}
       <div className="app-width flex flex-col lg:flex-row gap-10 lg:items-start lg:text-left">
         <div className="flex-1">
-          <h3 className="text-orange-400 font-bold text-2xl">Who We Are</h3>
+          <h3 className="text-orange-400 font-bold">Who We Are</h3>
           <h2 className="text-xl lg:text-4xl font-bold text-gray-900 mt-5">
             We Provide a Variety of Charging Solutions Customized to Fit your
             Unique Business Model.

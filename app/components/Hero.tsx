@@ -12,18 +12,18 @@ const Hero = () => {
           {/* Left - Text Content */}
           <div className="lg:w-1/2">
             <div className="max-w-[610px]">
-              <p className="text-orange-400 text-base font-semibold">
+              <p className="text-orange-400 font-semibold">
                 For Everyone, Every Business, and Every Electric Vehicle
               </p>
-              <h1 className="text-3xl lg:text-6xl font-bold mt-2 leading-tight">
+              <h1 className="text-3xl lg:text-7xl font-bold mt-2 leading-tight">
                 Solutions for EV Charging Stations
               </h1>
-              <p className="text-gray-300 mt-4">
+              <p className="text-gray-300 text-base mt-6">
                 Our residential, commercial, and fast charging stations are
                 highly compatible, built on open standards, and designed for
                 accessibility for all.
               </p>
-              <div className="pt-10"></div>
+              <div className="mt-10"></div>
               <p className="mt-6 text-gray-400">
                 Help us minimize your carbon footprint,
                 <br /> one charge at a time!
