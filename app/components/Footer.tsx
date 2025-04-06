@@ -24,16 +24,16 @@ export default function Footer() {
           {/* Links */}
           <div className="grid grid-cols-2 gap-6">
             <div>
-              <h3 className="text-2xl md:text-3xl font-semibold mb-3">Company</h3>
-              <ul className="space-y-2 text-base md:text-xl text-gray-400">
+              <h3 className="text-2xl font-semibold mb-3">Company</h3>
+              <ul className="space-y-2 text-base text-gray-400">
                 <li><a href="/contacts">Contact</a></li>
                 <li><a href="/blog">Blog</a></li>
                 <li><Link href="/#faqs"><span>FAQs</span></Link></li>
               </ul>
             </div>
             <div>
-              <h3 className="text-2xl md:text-3xl font-semibold mb-3">Features</h3>
-              <ul className="space-y-2 text-base md:text-xl text-gray-400">
+              <h3 className="text-2xl font-semibold mb-3">Features</h3>
+              <ul className="space-y-2 text-base text-gray-400">
                 <li><Link href="/#howitworks"><span>How It Works</span></Link></li>
                 <li><Link href="/#howwehelp"><span>How We Help</span></Link></li>
                 <li><Link href="/#whoweare"><span>Who We Are</span></Link></li>
@@ -61,7 +61,7 @@ export default function Footer() {
         </div>
 
         {/* Bottom Section */}
-        <div className="mt-6 border-t border-gray-700 pt-6 flex flex-col md:flex-row justify-between text-gray-400 text-sm md:text-base text-center md:text-left">
+        <div className="mt-6 border-t border-gray-700 pt-6 flex flex-col md:flex-row justify-between text-gray-400 text-base text-center md:text-left">
           <p>Copyright Maxwell Co. © 2024</p>
           <p><a href="#" className="hover:text-white">Privacy & Policy</a></p>
         </div>
