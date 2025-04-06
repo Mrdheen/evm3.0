@@ -107,8 +107,8 @@ export default function BlogGrid() {
 
               {/* Text Content */}
               <div className="mt-4">
-                <p className="text-blue-600 font-semibold">{post.category}</p>
-                <h3 className="text-xl font-bold mt-2">{post.title}</h3>
+                <p className="text-blue-600 text-sm font-semibold">{post.category}</p>
+                <h3 className="text-2xl font-bold mt-2">{post.title}</h3>
                 <p className="text-gray-600 mt-2">{post.description}</p>
               </div>
 

@@ -13,7 +13,7 @@ export default function BlogHeader() {
         <h1 className="text-2xl lg:text-5xl font-bold text-gray-900 mt-4">
           We are here to help you
         </h1>
-        <p className="text-gray-600 mt-4 text-lg lg:text-xl">
+        <p className="text-gray-600 mt-4 text-xl">
           The latest industry news, interviews, technologies, and resources.
         </p>
 
