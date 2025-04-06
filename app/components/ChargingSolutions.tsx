@@ -39,7 +39,7 @@ const ChargingSolutions = () => {
       </div>
 
       {/* 🔹 Map Section */}
-      <div className="mt-10 mx-6 flex justify-center">
+      <div className="app-width mt-10 mx-6 flex justify-center">
         <Image
           src="/Map.png" // Replace with your real map image
           alt="EV Charging Map"
@@ -50,7 +50,7 @@ const ChargingSolutions = () => {
       </div>
 
       {/* 🔹 Features Section */}
-      <div className="mx-6 mt-6 grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div className="app-width mx-6 mt-6 grid grid-cols-1 md:grid-cols-3 gap-6">
         {[
           {
             icon: <Image src="/charge1.png" alt="✔️" width={48} height={48}/>,
@@ -80,7 +80,7 @@ const ChargingSolutions = () => {
           </div>
         ))}
       </div>
-      <div className="mx-6 mt-10 pt-40 flex justify-center">
+      <div className="app-width mx-6 mt-10 pt-40 flex justify-center">
         <Image
           src="/sponsors.png" // Replace with your real map image
           alt="Sponsors"

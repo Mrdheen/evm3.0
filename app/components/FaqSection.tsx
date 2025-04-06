@@ -26,8 +26,8 @@ export default function FAQSection() {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   return (
-    <section id="faqs" className="bg-gray-50 py-16 px-6 md:px-8">
-      <div className="app-width max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-30 items-center">
+    <section id="faqs" className="bg-gray-50 py-16">
+      <div className="app-width max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-30">
         {/* FAQ Section */}
         <div>
           <h3 className="text-orange-400 font-semibold">FAQs</h3>
@@ -53,7 +53,7 @@ export default function FAQSection() {
         </div>
 
         {/* Image Section */}
-        <div className="flex justify-center items-center mt-8 md:mt-0">
+        <div className="flex justify-center items-center mt-8 md:mt-0 hideimage">
           <Image
             src="/qas.png"
             alt="EV Charging"
