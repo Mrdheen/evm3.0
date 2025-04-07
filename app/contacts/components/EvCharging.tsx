@@ -4,8 +4,8 @@ import Image from "next/image";
 
 const EvChargingSection = () => {
   return (
-    <section className="bg-white text-gray-900 py-12 px-6">
-      <div className="app-width max-w-8xl mx-auto px-6 md:px-15">
+    <section className="bg-white text-gray-900 py-12">
+      <div className="app-width max-w-8xl mx-auto">
 
         {/* Introductory Paragraph */}
         <div className="text-gray-600 mb-8">

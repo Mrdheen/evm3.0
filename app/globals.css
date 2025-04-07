@@ -42,11 +42,44 @@ html {
   }
 }
 
-.menu-blur {
-  background: rgba(75, 85, 99, 0.6); /* Fallback for older browsers */
-  -webkit-backdrop-filter: blur(20px); /* Safari */
-  -moz-backdrop-filter: blur(20px); /* Firefox (experimental) */
-  -o-backdrop-filter: blur(20px); /* Opera (rarely needed) */
-  -ms-backdrop-filter: blur(20px); /* Edge Legacy (won't work but prevents errors) */
-  backdrop-filter: blur(20px);
+/* logos.module.css */
+.logo-webasto {
+  width: 283px;
+  height: 60px;
+}
+.logo-tesla {
+  width: 71px;
+  height: 60px;
+}
+.logo-maxwell {
+  width: 113px;
+  height: 60px;
+}
+.logo-abb {
+  width: 153px;
+  height: 60px;
+}
+.logo-enelx {
+  width: 237px;
+  height: 60px;
+}
+.logo-bosch {
+  width: 224px;
+  height: 52px;
+}
+.logo-enphase {
+  width: 275px;
+  height: 50px;
+}
+.logo-chargepoint {
+  width: 258px;
+  height: 58px;
+}
+.logo-amazon {
+  width: 141px;
+  height: 62px;
+}
+.logo-asana {
+  width: 164px;
+  height: 62px;
 }

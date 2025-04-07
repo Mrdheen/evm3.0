@@ -86,7 +86,7 @@ export default function BlogGrid() {
   ];
 
   return (
-    <div className="mt-[-120px] px-6 py-12">
+    <div className="mt-[-150px] py-12">
       <div className="app-width max-w-7xl mx-auto">
         {/* Blog Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">

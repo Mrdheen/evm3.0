@@ -7,6 +7,7 @@ import Testimonials from "./components/Testimonials";
 import FAQSection from "./components/FaqSection";
 import BlogSection from "./components/BlogSection";
 import DownloadApp from "./components/MobileAppBanner";
+import PartnersLogos from "./components/Partners";
 import { Fragment } from "react";
 
 export default function Main() {
@@ -15,6 +16,7 @@ export default function Main() {
       <Hero />
       <WhoWeAre />
       <ChargingSolutions />
+      <PartnersLogos />
       <HowItWorks />
       <HowWeHelp />
       <Testimonials />

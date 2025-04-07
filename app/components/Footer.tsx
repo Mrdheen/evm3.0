@@ -4,20 +4,21 @@ import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from "react-icons/f
 import { HiLocationMarker, HiMail, HiPhone } from "react-icons/hi";
 import Image from "next/image";
 import Link from "next/link";
+import { IconType } from "react-icons";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#0B121D] text-white py-12 px-6">
+    <footer className="bg-[#0B121D] text-white py-12">
       <div className="app-width max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 items-start text-center md:text-left">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 items-start">
           {/* Logo & Social Icons */}
           <div className="flex flex-col items-center md:items-start">
             <Image src="/logoss.png" alt="Logo" width={243} height={126} />
             <div className="flex space-x-4 mt-4">
-              <SocialIcon Icon={FaFacebookF} />
-              <SocialIcon Icon={FaTwitter} />
-              <SocialIcon Icon={FaInstagram} />
-              <SocialIcon Icon={FaLinkedinIn} />
+              <SocialIcon Icon={FaFacebookF} href="https://www.facebook.com" />
+              <SocialIcon Icon={FaTwitter} href="https://www.twitter.com" />
+              <SocialIcon Icon={FaInstagram} href="https://www.instagram.com" />
+              <SocialIcon Icon={FaLinkedinIn} href="https://www.linkedin.com" />
             </div>
           </div>
 
@@ -70,17 +71,26 @@ export default function Footer() {
   );
 }
 
-// Social Icon Component
-import { IconType } from "react-icons";
-
-const SocialIcon = ({ Icon }: { Icon: IconType }) => (
-  <div className="p-3 bg-gray-700 hover:bg-gray-600 rounded-full">
+// Social Icon Component with Link
+const SocialIcon = ({
+  Icon,
+  href,
+}: {
+  Icon: IconType;
+  href: string;
+}) => (
+  <Link
+    href={href}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="p-3 bg-gray-700 hover:bg-gray-600 rounded-full"
+  >
     <Icon className="text-white text-lg" />
-  </div>
+  </Link>
 );
 
 // Contact Info Component
-const ContactInfo = ({ Icon, text }: { Icon: IconType, text: string }) => (
+const ContactInfo = ({ Icon, text }: { Icon: IconType; text: string }) => (
   <div className="flex items-center md:items-start space-x-3">
     <Icon className="text-gray-200 text-2xl md:text-3xl" />
     <p className="text-gray-400 text-base md:text-xl">{text}</p>

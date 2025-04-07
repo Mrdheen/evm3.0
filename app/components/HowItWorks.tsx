@@ -4,7 +4,7 @@ const HowItWorks = () => {
   return (
     <section
       id="howitworks"
-      className="bg-[#071E34] text-white py-20 px-6 lg:px-12"
+      className="bg-[#071E34] text-white py-20"
     >
       <div className="app-width max-w-7xl mx-auto flex flex-col gap-10">
         {/* Top Section: Image + Content */}

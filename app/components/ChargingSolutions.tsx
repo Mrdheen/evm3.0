@@ -80,15 +80,6 @@ const ChargingSolutions = () => {
           </div>
         ))}
       </div>
-      <div className="app-width mx-6 mt-10 pt-40 flex justify-center">
-        <Image
-          src="/sponsors.png" // Replace with your real map image
-          alt="Sponsors"
-          width={1280}
-          height={170}
-          className="w-full"
-        />
-      </div>
     </section>
   );
 };

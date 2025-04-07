@@ -18,7 +18,7 @@ export default function BlogHeader() {
         </p>
 
         {/* Search Bar */}
-        <div className="mt-10 flex justify-center px-4">
+        <div className="mt-10 flex justify-center">
           <div className="relative w-full sm:max-w-md">
             <span className="absolute left-3 sm:left-4 top-1/2 transform -translate-y-1/2 text-gray-400">
               <Image src="/search.png" alt="Search Icon" width={20} height={20} />

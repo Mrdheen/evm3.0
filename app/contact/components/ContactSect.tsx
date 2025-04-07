@@ -33,9 +33,10 @@ export default function ContactSection() {
   };
 
   return (
-    <section className="flex flex-col lg:flex-row items-center justify-between bg-white pt-10 max-w-8xl mx-auto">
+    <section className="bg-white pt-10 max-w-8xl mx-auto">
+      <div className="app-width flex flex-col lg:flex-row items-center justify-between">
       {/* Left Image */}
-      <div className="w-full mx-10 lg:w-1/2 hideimage">
+      <div className="w-full lg:w-1/2 hideimage">
         <Image
           src="/contee.png"
           alt="EV Charging Station"
@@ -46,7 +47,7 @@ export default function ContactSection() {
       </div>
 
       {/* Right Form */}
-      <div className="w-full lg:w-1/2 p-6">
+      <div className="w-full lg:w-1/2">
         <h2 className="text-xl lg:text-5xl font-bold text-gray-900">We are here to help you</h2>
         <p className="text-gray-600 mt-10">
           If you have any questions about our products, need help solving a problem or need assistance, our specialized team is here to help you with whatever you need.{" "}
@@ -127,6 +128,7 @@ export default function ContactSection() {
             </span>
           </button>
         </form>
+      </div>
       </div>
     </section>
   );

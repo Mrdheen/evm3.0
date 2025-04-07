@@ -1,7 +1,7 @@
 
 const Hero = () => {
     return (
-      <div className="py-35 relative w-full h-screen bg-[url(/bckhro3.png)] bg-cover bg-center text-white">
+      <div className="py-35 relative w-full min-h-fit bg-[url(/bckhro3.png)] bg-cover bg-center text-white">
         {/* Background Overlay */}
         <div className="absolute inset-0 bg-black/60"></div>
         < div className = "app-width relative text-center mt-40 text-gray-100" >
