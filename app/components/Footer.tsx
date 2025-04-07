@@ -7,6 +7,8 @@ import Link from "next/link";
 import { IconType } from "react-icons";
 
 export default function Footer() {
+  const currentYear = new Date().getFullYear();
+
   return (
     <footer className="bg-[#0B121D] text-white py-12">
       <div className="app-width max-w-7xl mx-auto">
@@ -63,7 +65,7 @@ export default function Footer() {
 
         {/* Bottom Section */}
         <div className="mt-6 border-t border-gray-700 pt-6 flex flex-col md:flex-row justify-between text-gray-400 text-base text-center md:text-left">
-          <p>Copyright Maxwell Co. © 2024</p>
+          <p>Copyright Maxwell Co. © {currentYear}</p>
           <p><a href="#" className="hover:text-white">Privacy & Policy</a></p>
         </div>
       </div>
